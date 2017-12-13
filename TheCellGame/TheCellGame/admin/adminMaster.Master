@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMaster.master.cs" Inherits="TheCellGame.admin.adminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <!-- Required meta tags -->
+	  <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+      <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="../node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
+      <link rel="stylesheet" href="../css/style.css"/>
+      <link rel="shortcut icon" href="../images/favicon.png"/>
+</head>
+<body>
+    <form id="form1" runat="server" method="post">
+        
+	<div class=" container-scroller">
+        <!--Navbar-->
+        <nav class="navbar bg-primary-gradient col-lg-12 col-12 p-0 fixed-top navbar-inverse d-flex flex-row">
+            <div class="bg-white text-center navbar-brand-wrapper">
+                <a class="navbar-brand brand-logo-mini" href="#"><img src="images/cell_logo.jpg" alt=""/></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center">
+                <button class="navbar-toggler navbar-toggler hidden-md-down align-self-center mr-3" type="button" data-toggle="minimize">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav ml-lg-auto d-flex align-items-center flex-row">
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right hidden-lg-up align-self-center" type="button" data-toggle="offcanvas">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <!--End navbar-->
+		
+        <div class="container-fluid">
+            <div class="row row-offcanvas row-offcanvas-right">
+                <nav class="bg-white sidebar sidebar-fixed sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+					    <br><br><br><br>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.aspx">
+                                <!-- <i class="fa fa-dashboard"></i> -->
+                                <img src="../images/home.png" alt=""/>
+                                <span class="menu-title">Home</span>
+                            </a>
+                        </li>
+                        
+				
+						 <li class="nav-item">
+                            <a class="nav-link" href="viewDecisionTrees.aspx">
+                                <img src="../images/add.png" alt=""/>
+                                <span class="menu-title">Scenarios</span>
+                            </a>
+                        </li>
+
+						 <li class="nav-item">
+                            <a class="nav-link" href="play.aspx">
+                                <img src="../images/play.png" alt=""/>
+                                <span class="menu-title">Play</span>
+                            </a>
+                        </li>
+
+						<!--
+                         <li class="nav-item">
+                            <a class="nav-link" href="viewApprovalRequests.aspx">
+                                <img src="../images/approval.ico" alt=""/>
+                                <span class="menu-title">Approval Requests</span>
+                            </a>
+                        </li>
+						-->
+						 <li class="nav-item">
+                            <a class="nav-link" href="grades.aspx">
+                                <img src="../images/approval.ico" alt=""/>
+                                <span class="menu-title">Grades</span>
+                            </a>
+                        </li>
+						 <li class="nav-item">
+                            <a class="nav-link" href="changePassword.aspx">
+                                <!-- <i class="fa fa-bold"></i> -->
+                                <img src="../images/icons/10.png" alt=""/>
+                                <span class="menu-title">Change Password</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../common/logout.aspx">
+                                <!-- <i class="fa fa-table"></i> -->
+                                <img src="../images/logout.png" alt=""/>
+                                <span class="menu-title">Logout</span>
+                            </a>
+                        </li>                        
+                    </ul>
+                </nav>
+                <!-- SIDEBAR ENDS -->
+                
+                <div class="content-wrapper">
+                   <div class="text-right">
+				 <asp:Label ID="nameDisplayLabel" runat="server" class="text-primary mb-4"></asp:Label>
+				</div>
+				   <asp:ContentPlaceHolder Id="UserContentPlaceHolder" runat="server">
+
+				   </asp:ContentPlaceHolder>
+				   
+                </div>
+                <footer class="footer">
+                    <div class="container-fluid clearfix">
+                      <span class="float-right">
+                          <a href="#">Cell Game</a> &copy; 2017
+                      </span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+      </div>
+
+      <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="../node_modules/tether/dist/js/tether.min.js"></script>
+      <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="../node_modules/chart.js/dist/Chart.min.js"></script>
+      <script src="../node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5NXz9eVnyJOA81wimI8WYE08kW_JMe8g&callback=initMap" async = "async" defer ="defer"></script>
+      <script src="../js/off-canvas.js"></script>
+      <script src="../js/hoverable-collapse.js"></script>
+      <script src="../js/misc.js"></script>
+      <script src="../js/chart.js"></script
+      <script src="j../s/maps.js"></script>
+
+
+		
+    </form>
+</body>
+</html>
+

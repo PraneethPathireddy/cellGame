@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TestConnectionString-Web.config Connection String" description="TestConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\myDbTest.mdf;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\pmpra\\source\\repos\\TheCellGame\\TheCellGame\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TestConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="myConnString-Web.config Connection String" description="myConnString Connection String used in web.config by the application to access the database." defaultValue="Server=DESKTOP-99L0RGS; database=TheCellGame; Trusted_Connection=True; MultipleActiveResultSets=True;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\pmpra\\source\\repos\\TheCellGame\\TheCellGame\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='myConnString']/@connectionString" />
+  </parameter>
+  <parameter name="myTestDBConnectionString-Web.config Connection String" description="myTestDBConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=DESKTOP-99L0RGS;Initial Catalog=myTestDB;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\pmpra\\source\\repos\\TheCellGame\\TheCellGame\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='myTestDBConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

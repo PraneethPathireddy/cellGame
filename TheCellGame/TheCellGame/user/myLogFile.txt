@@ -1,0 +1,33 @@
+cellLifeCycle
+     5
+cellLifeCycle
+     5 0
+
+
+insert into Linking(descisionTreeId, questionId, question, option1, option2, option1NextQuestionId, option2NextQuestionId)
+     values(6, 2, 'Despite that your friends were dividing, you decided now was not your time. You spend the next couple of days bulking up before embarking on the next phase of your life journey. You grow to a handsome stature of 55 microns tall and 31 microns wide. You are at a crossroads. What will you do?
+', 'Move to the next stage of life: S phase', 'Dividing is a lot of work. Dividing is a lot of work. You decide to conserve energy and remove yourself from the cell cycle and enter G0
+', 0, 0);          6       1
+          7       1
+          7       1
+          7       1
+          7       1
+          7       1
+          6       1
+          6       1
+          6       1
+          6       1
+          31       1
+     0 0
+     0 0
+     0 0
+     0 0
+     1019 1
+  entered:   f1
+ entered:    f2
+     1019 1
+  entered:   f1
+ entered:    f2
+     1019 1
+  entered:   f1
+ entered:    f2
